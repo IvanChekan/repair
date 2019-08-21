@@ -4,16 +4,17 @@
 	&-block
 		display: flex
 	&-text
-		flex-basis: 40%
+		flex-basis: 50%
 		padding-right: 100px
 		&__title
 			font-size: 41px
 			margin-bottom: 40px
+			font-family: +bold
 		&__subtitle
 			display: inline-block
 			font-size: 20px
-			font-weight: 500
 			margin-bottom: 69px
+			+bold
 	&-list
 		margin: 0
 		padding: 0
@@ -67,8 +68,6 @@
 				line-height: 1.5
 			&__image
 				margin-right: 15px
-
-
 
 @media  ( max-width:320px  )
 	.hero
