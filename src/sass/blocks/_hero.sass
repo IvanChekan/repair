@@ -1,0 +1,80 @@
+.hero
+	padding: 51px
+	background-color: $section-color
+	&-block
+		display: flex
+	&-text
+		flex-basis: 40%
+		padding-right: 100px
+		&__title
+			font-size: 41px
+			margin-bottom: 40px
+		&__subtitle
+			display: inline-block
+			font-size: 20px
+			font-weight: 500
+			margin-bottom: 69px
+	&-list
+		margin: 0
+		padding: 0
+		&__item
+			list-style: none
+			display: flex
+			align-items: center
+			margin-bottom: 25px
+			&:last-child
+				margin-bottom: 0
+		&__text
+			max-width: 265px
+			line-height: 24px
+		&__image
+			display: flex
+			align-items: center
+			justify-content: center
+			border: 2px solid $main-color
+			border-radius: 50%
+			width: 40px
+			height: 40px
+			margin-right: 40px
+
+
+@media  ( max-width:1200px  )
+	.hero
+		&-block
+			flex-direction: column
+		&-list
+			margin-bottom: 40px
+		&-text
+			padding-right: 0
+
+
+@media  ( max-width:768px  )
+	.hero
+		padding: 38px 0
+		&-text
+			&__title
+				font-size: 24px
+				margin-bottom: 13px
+			&__subtitle
+				font-size: 16px
+				margin-bottom: 35px
+				line-height: 1.4
+		&-list
+			&__item
+				margin-bottom: 18px
+			&__text
+				font-size: 12px
+				line-height: 1.5
+			&__image
+				margin-right: 15px
+
+
+
+@media  ( max-width:320px  )
+	.hero
+		&-text
+			&__subtitle
+				max-width: 196px
+		&-list
+			&__text
+				max-width: 198px
