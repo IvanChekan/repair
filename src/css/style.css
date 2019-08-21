@@ -1,0 +1,106 @@
+.container {
+  width: 1170px;
+  margin: auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.button {
+  border-radius: 10px;
+  background-color: #ffd200;
+  border: none;
+  padding: 18px 30px;
+}
+
+.button:active:focus {
+  outline: none;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 760px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 550px;
+    width: 95%;
+  }
+}
+
+.navbar {
+  padding: 8px 0;
+}
+
+.navbar-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: right;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 30px;
+}
+
+.navbar__address {
+  margin-bottom: 9px;
+  display: inline-block;
+}
+
+.navbar__phone {
+  color: #333333;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.navbar__button {
+  font-size: 13px;
+}
+
+@media (max-width: 768px) {
+  .navbar__contacts {
+    display: none;
+  }
+  .navbar__button {
+    font-size: 10px;
+    padding: 14px 26px;
+    border-radius: 5px;
+    margin-right: 17px;
+  }
+  .navbar__logo {
+    width: 90px;
+    padding-left: 20px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
