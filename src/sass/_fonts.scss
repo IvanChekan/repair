@@ -11,13 +11,15 @@
 
 @font-face {
 	font-family: 'Museo Sans Bold';
-	src: url('MuseoSansCyrl-700.eot');
-	src: url('MuseoSansCyrl-700.eot?#iefix') format('embedded-opentype'),
-		url('MuseoSansCyrl-700.woff') format('woff'),
-		url('MuseoSansCyrl-700.ttf') format('truetype');
+	src: url('../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot');
+	src: url('../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff') format('woff'),
+		url('../fonts/MuseoSansCyrl/MuseoSansCyrl-700.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
+
+
 
 @mixin reg {
 	font-family: 'Museo Sans Light'sans-serif;
@@ -25,6 +27,6 @@
 }
 
 @mixin bold {
-	font-family: 'Museo Sans Bold'sans-serif;
+	font-family: 'Museo Sans Bold';
 	font-weight: 700
 }

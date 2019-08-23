@@ -7,6 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Ремонт квартир</title>
 	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -23,7 +24,7 @@
 						<span class="navbar__address">Калуга, Москва, МО</span>
 						<a href="tel:+7(495)42-251-31" class="navbar__phone">+7 (495) 42-251-31</a>
 					</div>
-					<button class="button navbar__button">Перезвоните мне</button>
+					<button class="button navbar__button" id="button">Перезвоните мне</button>
 				</div>
 			</div>
 		</div>
@@ -65,7 +66,92 @@
 			</div>
 		</section>
 		<!-- /.hero -->
+
+		<section class="offer">
+			<div class="container">
+				<div class="offer-block">
+					<h2 class="section-title offer__title">Мы бесплатно разработаем дизайн-проект Вашего жилья и реализуем его!
+					</h2>
+					<span class="section-subtitle offer__subtitle">Оставьте заявку на разработку бесплатного
+						дизайн-проекта!</span>
+					<form action="#" class="form offer__form">
+						<input type="text" class="input offer__input" placeholder="Ваше имя">
+						<input type="tel" class="input offer__input" placeholder="Ваш телефон">
+						<button class="button offer__button">Получить бесплатный дизайн-проект</button>
+					</form>
+					<div class="feedback">
+						<div class="feedback-manager">Наш менеджер перезвонит Вам в течение 60 секунд</div>
+						<div class="feedback-block">
+							<div class="feedback__your">или перезвоните нам сами</div>
+							<a href="+7(495)42-251-31" class="feedback__phone">+7 (495) 42-251-31</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /.offer -->
+
+		<section class="portfolio">
+			<div class="container">
+				<h2 class="section-title portfolio__title">Работая с 2007 года,<br> мы сделали более 500 ремонтов в квартирах и
+					домах
+				</h2>
+				<div class="slider portfolio__slider">
+					<div class="slider__item"><img class="slider__image" src="img/portfolio/slider-1.jpg" alt=""></div>
+					<!-- /.slider__item -->
+					<div class="slider__item"><img class="slider__image" src="img/portfolio/slider-2.jpg" alt=""></div>
+					<!-- /.slider__item -->
+					<div class="slider__item"><img class="slider__image" src="img/portfolio/slider-3.jpg" alt=""></div>
+					<!-- /.slider__item -->
+					<div class="slider__item"><img class="slider__image" src="img/portfolio/slider-1.jpg" alt=""></div>
+					<!-- /.slider__item -->
+					<div class="slider__item"><img class="slider__image" src="img/portfolio/slider-2.jpg" alt=""></div>
+					<!-- /.slider__item -->
+					<div class="slider__item"><img class="slider__image" src="img/portfolio/slider-3.jpg" alt=""></div>
+					<!-- /.slider__item -->
+				</div>
+				<div class="arrows portfolio__arrows">
+					<div class="arrows__left">
+						<img src="img/portfolio/left-arrow.png" alt="left-arrow">
+					</div>
+					<div class="arrows__right">
+						<img src="img/portfolio/right-arrow.png" alt="right-arrow">
+					</div>
+				</div>
+				<!-- /.slider -->
+			</div>
+		</section>
+		<!-- /.portfolio -->
+
+
 	</main>
-	<!-- main -->
+
+
+
+	<div class="modal" id="modal">
+		<div class="modal-dialog">
+			<button class="modal-dialog__close" id="close">&times;</button>
+			<h4 class="modal-dialog__title">Всплывающие окно</h4>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+	<script src="js/main.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="js/modal.js"></script>
+	<script src="js/scripts.js"></script>
+	<script src="js/slick.min.js"></script>
+
+
+
 
 </body>
+
+</html>
