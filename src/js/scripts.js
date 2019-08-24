@@ -38,3 +38,8 @@ $(document).ready(function () {
 		]
 	});
 });
+
+// Инициализация  WOW.JS
+$(document).ready(function () {
+	new WOW().init();
+});
