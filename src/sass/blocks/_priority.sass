@@ -1,0 +1,52 @@
+.priority
+	padding-top: 100px
+	padding-bottom: 143px
+	&-block
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		&s
+			height: 410px
+			width: 370px
+			background-color: $priority-color
+			position: relative
+			&__images
+				width: 100%
+				position: absolute
+				bottom: -5px
+			&__text
+				display: block
+				margin: 27px 25px
+				max-width: 288px
+				font-size: 16px
+				line-height: 23px
+
+
+@media ( max-width: 1200px )
+	.priority 
+		&-block
+			&s
+				margin-bottom: 31px
+			&:last-child
+				margin-bottom: 0	
+
+@media ( max-width: 768px )
+	.priority 
+		padding-bottom: 70px
+		&-blocks
+			height: 380px
+			margin: auto
+			margin-bottom: 31px
+			&__text
+				font-size: 12px
+
+@media ( max-width: 320px )
+	.priority 
+		padding-top: 59px
+		padding-bottom: 77px
+		&__section 
+			padding-top: 40px
+		&-blocks
+			height: 350px
+			&__text 
+				line-height: 16.83px
